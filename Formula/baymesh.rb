@@ -1,7 +1,7 @@
 class Baymesh < Formula
   include Language::Python::Virtualenv
 
-  desc "Command-line and library for members of Bayme.sh"
+  desc "Command-line and library for member of Bayme.sh"
   homepage "https://github.com/gtaylor/baymesh-cli"
   url "https://files.pythonhosted.org/packages/e7/19/fad6f32d430ac1dc44d6cb49cd4245fdb51b840c338e092489463ba50635/baymesh-0.3.3.tar.gz"
   sha256 "a279548dcb5dcceac4c4cf344fcf9fcc3bd32b1f90333543d4f25d5f707e6442"
