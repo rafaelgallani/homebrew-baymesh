@@ -9,7 +9,7 @@ jobs:
       contents: write
     steps:
       - name: Set up Homebrew
-        uses: Homebrew/actions/setup-homebrew@master
+        run: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
       - name: Set up git
         uses: Homebrew/actions/git-user-config@master
