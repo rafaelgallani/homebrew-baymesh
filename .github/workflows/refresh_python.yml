@@ -8,11 +8,17 @@ jobs:
     permissions:
       contents: write
     steps:
+      - name: Run uname
+        run: uname  -a
+
       - name: Set up Homebrew
         run: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
       - name: Update brew
         run: brew update && brew upgrade
+
+      - name: Untap
+        run: brew untap homebrew/cask && brew untap homebrew/core && brew uninstall openssl@1.1 ruby@3.0
 
       - name: Add tap
         run: brew tap gtaylor/baymesh
