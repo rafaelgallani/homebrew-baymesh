@@ -12,7 +12,11 @@ jobs:
         run: uname  -a
 
       - name: Update brew
-        run: brew update && brew upgrade
+        run: brew update
+
+      # Brew doctor freaks out about these being tapped, so remove them.
+      - name: Untap
+        run: brew untap homebrew/cask homebrew/core && brew cleanup
 
       - name: Add tap
         run: brew tap gtaylor/baymesh
