@@ -10,7 +10,9 @@ import requests
 def main() -> None:
     response = requests.get("https://pypi.org/pypi/baymesh/json")
     rdict = response.json()
-    for url in rdict["urls"]:
+    # Example JSON output: https://pypi.org/pypi/baymesh/json
+    # urls keyword seems to be sorted and there is a wheel and a tarball per version.
+    for url in rdict["urls"][-2:]:
         if url["url"].endswith(".tar.gz"):
             print(url["url"])
 

@@ -14,9 +14,6 @@ jobs:
       - name: Update brew
         run: brew update && brew upgrade
 
-      - name: Untap
-        run: brew untap homebrew/cask && brew untap homebrew/core && brew uninstall openssl@1.1 ruby@3.0 && brew cleanup
-
       - name: Add tap
         run: brew tap gtaylor/baymesh
 
