@@ -14,9 +14,13 @@ jobs:
       - name: Update brew
         run: brew update
 
-      # Brew doctor freaks out about these being tapped, so remove them.
+      # Brew doctor freaks out about these being tapped.
       - name: Untap
-        run: brew untap homebrew/cask homebrew/core && brew cleanup
+        run: brew untap homebrew/cask homebrew/core
+
+      # Not sure why this comes by default but brew doctor errors out here as well.
+      - name: Remove legacy formula
+        run: brew uninstall openssl@1.1 && brew cleanup
 
       - name: Add tap
         run: brew tap gtaylor/baymesh
