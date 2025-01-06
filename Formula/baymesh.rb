@@ -1,16 +1,15 @@
-# Documentation: https://docs.brew.sh/Formula-Cookbook
-#                https://rubydoc.brew.sh/Formula
 class Baymesh < Formula
   include Language::Python::Virtualenv
 
-  desc ""
-  homepage ""
+  desc "Command-line and library for members of Bayme.sh"
+  homepage "https://github.com/gtaylor/baymesh-cli"
   url "https://files.pythonhosted.org/packages/e7/19/fad6f32d430ac1dc44d6cb49cd4245fdb51b840c338e092489463ba50635/baymesh-0.3.3.tar.gz"
   sha256 "a279548dcb5dcceac4c4cf344fcf9fcc3bd32b1f90333543d4f25d5f707e6442"
-  license ""
+  license "GPL-3.0-only"
 
-  depends_on "python"
   depends_on "rust" => :build
+  depends_on "libyaml"
+  depends_on "python"
 
   resource "annotated-types" do
     url "https://files.pythonhosted.org/packages/ee/67/531ea369ba64dcff5ec9c3402f9f51bf748cec26dde048a2f973a4eea7f5/annotated_types-0.7.0.tar.gz"
