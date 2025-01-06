@@ -8,6 +8,7 @@ rm Formula/baymesh.rb
 
 # Regenerate the formula from the latest release in PyPi.
 brew create \
+  --verbose \
   --python \
   "$(uv run --quiet scripts/get-latest-source-url.py)" \
   --tap gtaylor/baymesh
