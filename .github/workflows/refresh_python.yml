@@ -8,8 +8,8 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Run uname
-        run: uname  -a
+      - name: Install uv and set the python version
+        uses: astral-sh/setup-uv@v5
 
       - name: Update brew
         run: brew update
@@ -23,7 +23,7 @@ jobs:
         run: brew uninstall openssl@1.1 && brew cleanup
 
       - name: Add tap
-        run: brew tap gtaylor/baymesh
+        run: brew tap gtaylor/baymesh && cd /opt/homebrew/Library/Taps/gtaylor/homebrew-baymesh
 
       - name: Run brew config
         run: brew config
@@ -32,7 +32,7 @@ jobs:
         run: brew doctor --verbose
 
       - name: Regenerate Python Formulas
-        run: cd /opt/homebrew/Library/Taps/gtaylor/homebrew-baymesh && ./scripts/regen-python-formulas.sh
+        run: ./scripts/regen-python-formulas.sh
 
       - name: Push commits
         uses: Homebrew/actions/git-try-push@master

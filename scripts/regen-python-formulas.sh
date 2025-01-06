@@ -1,4 +1,5 @@
 #!/bin/zsh
+set -euxo pipefail
 # Retrieves the latest version of each Python-based formula and regenerates the
 # Formula, ensuring that we've got the latest versions in our tap.
 
