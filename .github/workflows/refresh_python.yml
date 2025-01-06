@@ -23,7 +23,7 @@ jobs:
         run: brew uninstall openssl@1.1 && brew cleanup
 
       - name: Add tap
-        run: brew tap gtaylor/baymesh && cd /opt/homebrew/Library/Taps/gtaylor/homebrew-baymesh
+        run: brew tap gtaylor/baymesh
 
       - name: Run brew config
         run: brew config
@@ -33,6 +33,7 @@ jobs:
 
       - name: Regenerate Python Formulas
         run: ./scripts/regen-python-formulas.sh
+        working-directory: /opt/homebrew/Library/Taps/gtaylor/homebrew-baymesh
 
       - name: Push commits
         uses: Homebrew/actions/git-try-push@master
