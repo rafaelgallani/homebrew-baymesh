@@ -12,7 +12,7 @@ jobs:
         uses: astral-sh/setup-uv@v5
 
       - name: Update brew
-        run: brew update
+        run: brew update && brew developer on
 
       # Brew doctor freaks out about these being tapped.
       - name: Untap
