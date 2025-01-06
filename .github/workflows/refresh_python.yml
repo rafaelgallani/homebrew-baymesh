@@ -25,9 +25,6 @@ jobs:
       - name: Add tap
         run: brew tap gtaylor/baymesh
 
-      - name: Remove old Formulas
-        run: rm /opt/homebrew/Library/Taps/gtaylor/homebrew-baymesh/Formula/baymesh.rb
-
       - name: Run brew config
         run: brew config
 
