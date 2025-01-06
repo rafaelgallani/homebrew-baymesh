@@ -9,8 +9,7 @@ rm Formula/baymesh.rb
 # Determine the URL for the latest release of our package.
 latest_sources="$(uv run --quiet scripts/get-latest-source-url.py)"
 # Regenerate the formula from the latest release in PyPi.
-brew create --verbose --python "${latest_sources}" --tap gtaylor/baymesh \
-  --set-name=baymesh
+brew create --python "${latest_sources}" --tap gtaylor/baymesh --set-name=baymesh
 
 # Apply additional customizations to the generated formulas.
 git apply patches/*
