@@ -20,8 +20,11 @@ jobs:
       - name: Remove old Formulas
         run: rm /opt/homebrew/Library/Taps/gtaylor/homebrew-baymesh/Formula/baymesh.rb
 
+      - name: Run brew doctor
+        run: brew doctor
+
       - name: Regenerate Python Formulas
-        run: brew create --python https://files.pythonhosted.org/packages/e7/19/fad6f32d430ac1dc44d6cb49cd4245fdb51b840c338e092489463ba50635/baymesh-0.3.3.tar.gz --tap gtaylor/baymesh --verbose
+        run: brew create --python https://files.pythonhosted.org/packages/e7/19/fad6f32d430ac1dc44d6cb49cd4245fdb51b840c338e092489463ba50635/baymesh-0.3.3.tar.gz --verbose
 
       - name: Apply patches
         run: cd /opt/homebrew/Library/Taps/gtaylor/homebrew-baymesh && git apply patches/baymesh.diff
