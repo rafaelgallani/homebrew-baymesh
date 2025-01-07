@@ -13,6 +13,7 @@ jobs:
         with:
           # GitHub access token with the 'public_repo' and 'workflow' scopes
           token: ${{secrets.HOMEBREW_TOKEN}}
+          livecheck: true
           no_fork: true
           tap: gtaylor/baymesh
           formula: baymesh
