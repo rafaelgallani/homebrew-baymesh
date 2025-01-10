@@ -3,8 +3,8 @@ class Baymesh < Formula
 
   desc "Command-line and library for members of Bayme.sh"
   homepage "https://github.com/gtaylor/baymesh-cli"
-  url "https://files.pythonhosted.org/packages/b1/14/43959477031ec5a76dc7fdebea84a51ea097710e85e91e37c3fee24af41a/baymesh-0.5.1.tar.gz"
-  sha256 "c35fdb21b04afa79f10dcc06da8c779324046acf23dcc42ffb1d62b94ba3a716"
+  url "https://files.pythonhosted.org/packages/2c/c3/e4663a727b0921766bcde4d3dfdeb94729bbeac33654e98e947ca63f2ffc/baymesh-0.6.0.tar.gz"
+  sha256 "8168f28649ef2dd854250e0e7795cae2f522c418f5b6ec1dd3019654b897b63d"
   license "GPL-3.0-only"
 
   depends_on "rust" => :build
@@ -52,13 +52,13 @@ class Baymesh < Formula
   end
 
   resource "protobuf" do
-    url "https://files.pythonhosted.org/packages/a5/73/4e6295c1420a9d20c9c351db3a36109b4c9aa601916cb7c6871e3196a1ca/protobuf-5.29.2.tar.gz"
-    sha256 "b2cc8e8bb7c9326996f0e160137b0861f1a82162502658df2951209d0cb0309e"
+    url "https://files.pythonhosted.org/packages/f7/d1/e0a911544ca9993e0f17ce6d3cc0932752356c1b0a834397f28e63479344/protobuf-5.29.3.tar.gz"
+    sha256 "5da0f41edaf117bde316404bad1a486cb4ededf8e4a54891296f648e8e076620"
   end
 
   resource "pydantic" do
-    url "https://files.pythonhosted.org/packages/70/7e/fb60e6fee04d0ef8f15e4e01ff187a196fa976eb0f0ab524af4599e5754c/pydantic-2.10.4.tar.gz"
-    sha256 "82f12e9723da6de4fe2ba888b5971157b3be7ad914267dea8f05f82b28254f06"
+    url "https://files.pythonhosted.org/packages/6a/c7/ca334c2ef6f2e046b1144fe4bb2a5da8a4c574e7f2ebf7e16b34a6a2fa92/pydantic-2.10.5.tar.gz"
+    sha256 "278b38dbbaec562011d659ee05f63346951b3a248a6f3642e1bc68894ea2b4ff"
   end
 
   resource "pydantic-core" do
