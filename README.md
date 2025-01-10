@@ -1,4 +1,6 @@
-# Gtaylor Baymesh
+# Meshtastic Bay Area Group Tap
+
+This Tap contains tools and utilities that are useful to members of the [Meshtastic Bay Area Group](https://bayme.sh/) (Baymesh).
 
 ## How do I install these formulae?
 
