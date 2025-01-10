@@ -16,4 +16,3 @@ jobs:
           livecheck: true
           no_fork: true
           tap: gtaylor/baymesh
-          formula: baymesh
