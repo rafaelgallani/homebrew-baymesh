@@ -3,8 +3,8 @@ class Meshtastic < Formula
 
   desc "Python client for use with Meshtastic devices"
   homepage "https://pypi.org/project/meshtastic/"
-  url "https://files.pythonhosted.org/packages/3a/72/db2f827f2b0b28be3870809067df76c1eb0c0ddcf3c460a28ff4e22aae5a/meshtastic-2.5.9.tar.gz"
-  sha256 "e0d90f18446605c232ad40d6903ffa6bce427d5c278443d254740a4bb2c8630c"
+  url "https://files.pythonhosted.org/packages/49/b7/bf82b12881eca0a6d8f93b1ed04b01013aee85f3611aa8f70c6686f5bf8b/meshtastic-2.5.10.tar.gz"
+  sha256 "1bf14953fcb3b45a9243def2b64ee83b421266fbf7f2679252a73e38dc5f7a18"
   license "GPL-3.0-only"
 
   depends_on "libyaml"
