@@ -3,18 +3,13 @@ class Baymesh < Formula
 
   desc "Command-line and library for members of Bayme.sh"
   homepage "https://github.com/gtaylor/baymesh-cli"
-  url "https://files.pythonhosted.org/packages/2c/c3/e4663a727b0921766bcde4d3dfdeb94729bbeac33654e98e947ca63f2ffc/baymesh-0.6.0.tar.gz"
-  sha256 "8168f28649ef2dd854250e0e7795cae2f522c418f5b6ec1dd3019654b897b63d"
+  url "https://files.pythonhosted.org/packages/e1/a6/123bb44db1a5e05ce0e3ac77b85f9ceab2eedcbf2a151b69f117de460ca1/baymesh-0.7.0.tar.gz"
+  sha256 "8659b6098e3cf3ef5f76d5315c4fd2863b3d755f28f0ee7cc04806d803eb179e"
   license "GPL-3.0-only"
 
   depends_on "rust" => :build
   depends_on "libyaml"
   depends_on "python"
-
-  resource "annotated-types" do
-    url "https://files.pythonhosted.org/packages/ee/67/531ea369ba64dcff5ec9c3402f9f51bf748cec26dde048a2f973a4eea7f5/annotated_types-0.7.0.tar.gz"
-    sha256 "aff07c09a53a08bc8cfccb9c85b05f1aa9a2a6f23728d790723543408344ce89"
-  end
 
   resource "bleak" do
     url "https://files.pythonhosted.org/packages/fb/96/15750b50c0018338e2cce30de939130971ebfdf4f9d6d56c960f5657daad/bleak-0.22.3.tar.gz"
@@ -42,8 +37,8 @@ class Baymesh < Formula
   end
 
   resource "meshtastic" do
-    url "https://files.pythonhosted.org/packages/3a/72/db2f827f2b0b28be3870809067df76c1eb0c0ddcf3c460a28ff4e22aae5a/meshtastic-2.5.9.tar.gz"
-    sha256 "e0d90f18446605c232ad40d6903ffa6bce427d5c278443d254740a4bb2c8630c"
+    url "https://files.pythonhosted.org/packages/49/b7/bf82b12881eca0a6d8f93b1ed04b01013aee85f3611aa8f70c6686f5bf8b/meshtastic-2.5.10.tar.gz"
+    sha256 "1bf14953fcb3b45a9243def2b64ee83b421266fbf7f2679252a73e38dc5f7a18"
   end
 
   resource "packaging" do
@@ -54,21 +49,6 @@ class Baymesh < Formula
   resource "protobuf" do
     url "https://files.pythonhosted.org/packages/f7/d1/e0a911544ca9993e0f17ce6d3cc0932752356c1b0a834397f28e63479344/protobuf-5.29.3.tar.gz"
     sha256 "5da0f41edaf117bde316404bad1a486cb4ededf8e4a54891296f648e8e076620"
-  end
-
-  resource "pydantic" do
-    url "https://files.pythonhosted.org/packages/6a/c7/ca334c2ef6f2e046b1144fe4bb2a5da8a4c574e7f2ebf7e16b34a6a2fa92/pydantic-2.10.5.tar.gz"
-    sha256 "278b38dbbaec562011d659ee05f63346951b3a248a6f3642e1bc68894ea2b4ff"
-  end
-
-  resource "pydantic-core" do
-    url "https://files.pythonhosted.org/packages/fc/01/f3e5ac5e7c25833db5eb555f7b7ab24cd6f8c322d3a3ad2d67a952dc0abc/pydantic_core-2.27.2.tar.gz"
-    sha256 "eb026e5a4c1fee05726072337ff51d1efb6f59090b7da90d30ea58625b1ffb39"
-  end
-
-  resource "pydantic-settings" do
-    url "https://files.pythonhosted.org/packages/73/7b/c58a586cd7d9ac66d2ee4ba60ca2d241fa837c02bca9bea80a9a8c3d22a9/pydantic_settings-2.7.1.tar.gz"
-    sha256 "10c9caad35e64bfb3c2fbf70a078c0e25cc92499782e5200747f942a065dec93"
   end
 
   resource "pyobjc-core" do
@@ -101,11 +81,6 @@ class Baymesh < Formula
     sha256 "3c77e014170dfffbd816e6ffc205e9842efb10be9f58ec16d3e8675b4925cddb"
   end
 
-  resource "python-dotenv" do
-    url "https://files.pythonhosted.org/packages/bc/57/e84d88dfe0aec03b7a2d4327012c1627ab5f03652216c63d49846d7a6c58/python-dotenv-1.0.1.tar.gz"
-    sha256 "e324ee90a023d808f1959c46bcbc04446a10ced277783dc6ee09987c37ec10ca"
-  end
-
   resource "pyyaml" do
     url "https://files.pythonhosted.org/packages/54/ed/79a089b6be93607fa5cdaedf301d7dfb23af5f25c398d5ead2525b063e17/pyyaml-6.0.2.tar.gz"
     sha256 "d584d9ec91ad65861cc08d42e834324ef890a082e591037abe114850ff7bbc3e"
@@ -119,11 +94,6 @@ class Baymesh < Formula
   resource "tabulate" do
     url "https://files.pythonhosted.org/packages/ec/fe/802052aecb21e3797b8f7902564ab6ea0d60ff8ca23952079064155d1ae1/tabulate-0.9.0.tar.gz"
     sha256 "0095b12bf5966de529c0feb1fa08671671b3368eec77d7ef7ab114be2c068b3c"
-  end
-
-  resource "typing-extensions" do
-    url "https://files.pythonhosted.org/packages/df/db/f35a00659bc03fec321ba8bce9420de607a1d37f8342eee1863174c69557/typing_extensions-4.12.2.tar.gz"
-    sha256 "1a7ead55c7e559dd4dee8856e3a88b41225abfe1ce8df57b7c13915fe121ffb8"
   end
 
   resource "urllib3" do
