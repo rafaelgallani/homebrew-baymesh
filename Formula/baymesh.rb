@@ -3,8 +3,8 @@ class Baymesh < Formula
 
   desc "Command-line and library for members of Bayme.sh"
   homepage "https://github.com/gtaylor/baymesh-cli"
-  url "https://files.pythonhosted.org/packages/78/a7/19fd73dc36d638945da965bbcd3bae85b9986d8c517f68780cee104325c0/baymesh-0.7.1.tar.gz"
-  sha256 "7f100b8d05541b0d287d38c2d5ecedd150e993456e600041f1dcbd386fc1d759"
+  url "https://files.pythonhosted.org/packages/7e/38/604d1c649cf08daba153866c2b79cf76f0d8f93f723fa629cd388395f5d9/baymesh-0.7.2.tar.gz"
+  sha256 "8530073547953169488f9f7a6ff6e8d154e08ea4b4019611b42ea4ce88d5ba5c"
   license "GPL-3.0-only"
 
   depends_on "rust" => :build
