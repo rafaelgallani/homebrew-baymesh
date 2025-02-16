@@ -3,8 +3,8 @@ class Baymesh < Formula
 
   desc "Command-line and library for members of Bayme.sh"
   homepage "https://github.com/gtaylor/baymesh-cli"
-  url "https://files.pythonhosted.org/packages/7e/38/604d1c649cf08daba153866c2b79cf76f0d8f93f723fa629cd388395f5d9/baymesh-0.7.2.tar.gz"
-  sha256 "8530073547953169488f9f7a6ff6e8d154e08ea4b4019611b42ea4ce88d5ba5c"
+  url "https://files.pythonhosted.org/packages/be/8f/f4279e8f419e404d9f9e5fa6de73771e11956e53162a1d54aa4b7882c13e/baymesh-0.7.3.tar.gz"
+  sha256 "24012c63dc9ae97dccfb61cfef796034a048beaf5776ec28f65bb7f31dfe8513"
   license "GPL-3.0-only"
 
   depends_on "rust" => :build
@@ -17,8 +17,8 @@ class Baymesh < Formula
   end
 
   resource "certifi" do
-    url "https://files.pythonhosted.org/packages/0f/bd/1d41ee578ce09523c81a15426705dd20969f5abf006d1afe8aeff0dd776a/certifi-2024.12.14.tar.gz"
-    sha256 "b650d30f370c2b724812bee08008be0c4163b163ddaec3f2546c1caf65f191db"
+    url "https://files.pythonhosted.org/packages/1c/ab/c9f1e32b7b1bf505bf26f0ef697775960db7932abeb7b516de930ba2705f/certifi-2025.1.31.tar.gz"
+    sha256 "3d5da6925056f6f18f119200434a4780a94263f10d1c21d032a6f6b2baa20651"
   end
 
   resource "charset-normalizer" do
@@ -37,8 +37,8 @@ class Baymesh < Formula
   end
 
   resource "meshtastic" do
-    url "https://files.pythonhosted.org/packages/49/b7/bf82b12881eca0a6d8f93b1ed04b01013aee85f3611aa8f70c6686f5bf8b/meshtastic-2.5.10.tar.gz"
-    sha256 "1bf14953fcb3b45a9243def2b64ee83b421266fbf7f2679252a73e38dc5f7a18"
+    url "https://files.pythonhosted.org/packages/ca/eb/6bdf7d76e271dec7a5af60a6ce86c68249dc85d93da16b4e70eceefdf409/meshtastic-2.5.11.tar.gz"
+    sha256 "89ccf0f1f1fb2c1520a58b8ad416d90825ee5fd725760fd0a1dc54057163ebe6"
   end
 
   resource "packaging" do
