@@ -3,8 +3,8 @@ class Meshtastic < Formula
 
   desc "Python client for use with Meshtastic devices"
   homepage "https://pypi.org/project/meshtastic/"
-  url "https://files.pythonhosted.org/packages/ca/eb/6bdf7d76e271dec7a5af60a6ce86c68249dc85d93da16b4e70eceefdf409/meshtastic-2.5.11.tar.gz"
-  sha256 "89ccf0f1f1fb2c1520a58b8ad416d90825ee5fd725760fd0a1dc54057163ebe6"
+  url "https://files.pythonhosted.org/packages/6c/67/dcfb9e21f80858794bbb019e9528ef7028b4c68b9fcfd98a6d80da2dd29d/meshtastic-2.5.12.tar.gz"
+  sha256 "0517b45d4469bf4ca715f9a148a3446aca112148df3f3286517a8ab92714b2b8"
   license "GPL-3.0-only"
 
   depends_on "libyaml"
@@ -16,8 +16,8 @@ class Meshtastic < Formula
   end
 
   resource "certifi" do
-    url "https://files.pythonhosted.org/packages/0f/bd/1d41ee578ce09523c81a15426705dd20969f5abf006d1afe8aeff0dd776a/certifi-2024.12.14.tar.gz"
-    sha256 "b650d30f370c2b724812bee08008be0c4163b163ddaec3f2546c1caf65f191db"
+    url "https://files.pythonhosted.org/packages/1c/ab/c9f1e32b7b1bf505bf26f0ef697775960db7932abeb7b516de930ba2705f/certifi-2025.1.31.tar.gz"
+    sha256 "3d5da6925056f6f18f119200434a4780a94263f10d1c21d032a6f6b2baa20651"
   end
 
   resource "charset-normalizer" do
