@@ -3,8 +3,8 @@ class Meshtastic < Formula
 
   desc "Python client for use with Meshtastic devices"
   homepage "https://pypi.org/project/meshtastic/"
-  url "https://files.pythonhosted.org/packages/31/64/5321c4c55e559a6ea969892b39c8408d282742d76b1c84e10e95620d7026/meshtastic-2.6.0.tar.gz"
-  sha256 "4dcc6bc397532c348c2013ec700e96856d1e73ca9c07e7c172d9cc80b9030312"
+  url "https://files.pythonhosted.org/packages/a1/3a/39d43c11b154f8fcd608ae967cc959ab94acca89c9f2c1b59abe9bf02ea8/meshtastic-2.6.1.tar.gz"
+  sha256 "70b1a6fd6d9119708a76605e391797a567ab2b5d05596cd5f0fd6443da5624ac"
   license "GPL-3.0-only"
 
   depends_on "libyaml"
@@ -36,8 +36,8 @@ class Meshtastic < Formula
   end
 
   resource "protobuf" do
-    url "https://files.pythonhosted.org/packages/53/6a/2629bb3529e5bdfbd6c4608ff5c7d942cd4beae85793f84ba543aab2548a/protobuf-6.30.0.tar.gz"
-    sha256 "852b675d276a7d028f660da075af1841c768618f76b90af771a8e2c29e6f5965"
+    url "https://files.pythonhosted.org/packages/c8/8c/cf2ac658216eebe49eaedf1e06bc06cbf6a143469236294a1171a51357c3/protobuf-6.30.2.tar.gz"
+    sha256 "35c859ae076d8c56054c25b59e5e59638d86545ed6e2b6efac6be0b6ea3ba048"
   end
 
   resource "pyobjc-core" do
