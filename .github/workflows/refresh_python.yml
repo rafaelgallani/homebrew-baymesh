@@ -36,7 +36,7 @@ jobs:
 
       # Remove old formula in the repo, re-run brew create, apply diffs.
       - name: Regenerate Python formulas
-        run: brew create --python https://files.pythonhosted.org/packages/e7/19/fad6f32d430ac1dc44d6cb49cd4245fdb51b840c338e092489463ba50635/baymesh-0.3.3.tar.gz --tap gtaylor/baymesh
+        run: brew create --python https://files.pythonhosted.org/packages/e7/19/fad6f32d430ac1dc44d6cb49cd4245fdb51b840c338e092489463ba50635/baymesh-0.3.3.tar.gz --tap gtaylor/baymesh --verbose
         working-directory: /opt/homebrew/Library/Taps/gtaylor/homebrew-baymesh
 
       - name: Push updated formulas
