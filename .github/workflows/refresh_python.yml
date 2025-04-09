@@ -36,7 +36,7 @@ jobs:
 
       # Remove old formula in the repo, re-run brew create, apply diffs.
       - name: Regenerate Python formulas
-        run: ./scripts/regen-python-formulas.sh
+        run: ls && ./scripts/regen-python-formulas.sh
         working-directory: /opt/homebrew/Library/Taps/gtaylor/homebrew-baymesh
 
       - name: Push updated formulas
