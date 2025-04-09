@@ -1,0 +1,46 @@
+# This pipeline regenerates the Python-based formulas in this tap as new versions
+# are released for each.
+name: refresh Python Formulas
+# I'm manually triggering this for the moment while debugging.
+on: workflow_dispatch
+
+jobs:
+  refresh:
+    runs-on: macos-15
+    permissions:
+      contents: write
+    steps:
+      - name: Install uv and set the python version
+        uses: astral-sh/setup-uv@v5
+
+      - name: Update brew and enable developer mode
+        run: brew update && brew developer on
+
+      # Brew doctor freaks out about these being tapped.
+      - name: Untap stuff
+        run: brew untap homebrew/cask homebrew/core
+
+      # Not sure why this comes by default but brew doctor errors out here as well.
+      - name: Remove legacy formula
+        run: brew uninstall openssl@1.1 && brew cleanup
+
+      - name: Add baymesh tap
+        run: brew tap gtaylor/baymesh
+
+      # Added config and doctor for debugging.
+      - name: Run brew config
+        run: brew config
+
+      - name: Run brew doctor
+        run: brew doctor --verbose
+
+      # Remove old formula in the repo, re-run brew create, apply diffs.
+      - name: Regenerate Python formulas
+        run: ./scripts/regen-python-formulas.sh
+        working-directory: /opt/homebrew/Library/Taps/gtaylor/homebrew-baymesh
+
+      - name: Push updated formulas
+        uses: Homebrew/actions/git-try-push@master
+        with:
+          token: ${{ github.token }}
+          branch: main
