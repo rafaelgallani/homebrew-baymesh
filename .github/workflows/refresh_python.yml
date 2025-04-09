@@ -18,7 +18,7 @@ jobs:
 
       # Brew doctor freaks out about these being tapped.
       - name: Untap stuff
-        run: brew untap homebrew/cask homebrew/core
+        run: brew untap homebrew/cask homebrew/core aws/tap
 
       # Not sure why this comes by default but brew doctor errors out here as well.
       - name: Remove legacy formula
