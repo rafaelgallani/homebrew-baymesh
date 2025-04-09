@@ -32,7 +32,7 @@ jobs:
         run: brew config
 
       - name: Run brew doctor
-        run: brew doctor --verbose
+        run: brew doctor
 
       # Remove old formula in the repo, re-run brew create, apply diffs.
       - name: Regenerate Python formulas
